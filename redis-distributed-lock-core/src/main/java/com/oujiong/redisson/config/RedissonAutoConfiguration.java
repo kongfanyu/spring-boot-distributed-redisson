@@ -15,9 +15,6 @@ import org.springframework.core.annotation.Order;
 
 /**
  * @Description: Redisson自动化配置
- *
- * @author xub
- * @date 2019/6/19 下午11:55
  */
 @Configuration
 @ConditionalOnClass(Redisson.class)
@@ -40,10 +37,8 @@ public class RedissonAutoConfiguration {
     @ConditionalOnMissingBean
     @Order(value = 1)
     public RedissonManager redissonManager(RedissonProperties redissonProperties) {
-        RedissonManager redissonManager =
-                new RedissonManager(redissonProperties);
-        LOGGER.info("[RedissonManager]组装完毕,当前连接方式:" + redissonProperties.getType() +
-            ",连接地址:" + redissonProperties.getAddress());
+        RedissonManager redissonManager = new RedissonManager(redissonProperties);
+        LOGGER.info("[RedissonManager]组装完毕,当前连接方式:" + redissonProperties.getType() +",连接地址:" + redissonProperties.getAddress());
         return redissonManager;
     }
 }

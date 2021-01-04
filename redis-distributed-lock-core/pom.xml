@@ -11,5 +11,4 @@
 
     <artifactId>redis-distributed-lock-core</artifactId>
 
-
 </project>

@@ -9,9 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * @author xub
  * @Description: 基于注解的方式 加锁
- * @date 2019/6/19 下午11:01
  */
 @RestController
 @Slf4j

@@ -10,9 +10,6 @@ import org.redisson.config.Config;
 
 /**
  * @Description: 单机部署Redisson配置
- *
- * @author xub
- * @date 2019/6/19 下午10:04
  */
 @Slf4j
 public class StandaloneConfigImpl implements RedissonConfigService {

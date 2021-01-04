@@ -11,15 +11,9 @@ import org.redisson.config.Config;
 
 /**
  * @Description: 哨兵集群部署Redis连接配置
- *
- * @author xub
- * @date 2019/6/19 下午9:17
  */
 @Slf4j
 public class SentineConfigImpl implements RedissonConfigService {
-
-
-
     @Override
     public Config createRedissonConfig(RedissonProperties redissonProperties) {
         Config config = new Config();

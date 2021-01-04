@@ -6,9 +6,6 @@ package com.oujiong.redisson.constant;
  *              sentinel-哨兵部署方式
  *              cluster-集群方式
  *              masterslave-主从部署方式
- *
- * @author xub
- * @date 2019/6/20 下午4:21
  */
 public enum RedisConnectionType {
 

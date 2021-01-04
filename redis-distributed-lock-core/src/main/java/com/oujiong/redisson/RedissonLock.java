@@ -8,18 +8,11 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * @Description: 针对源码Redisson进行一层封装
- *
- * @author xub
- * @date 2019/6/19 下午10:26
  */
 @Slf4j
 public class RedissonLock {
-
-
   private  RedissonManager redissonManager;
   private Redisson redisson;
-
-
     public RedissonLock(RedissonManager redissonManager) {
         this.redissonManager = redissonManager;
         this.redisson = redissonManager.getRedisson();

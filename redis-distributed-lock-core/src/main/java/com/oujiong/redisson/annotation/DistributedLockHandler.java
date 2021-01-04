@@ -14,9 +14,6 @@ import org.springframework.stereotype.Component;
 
 /**
  * @Description: Redisson分布式锁注解解析器
- *
- * @author xub
- * @date 2019/6/20 下午9:34
  */
 @Aspect
 @Component

@@ -8,9 +8,6 @@ import org.springframework.context.annotation.PropertySource;
 
 /**
  * @Description: 读取redis配置信息，封装到当前实体中
- *
- * @author xub
- * @date 2019/6/19 下午9:35
  */
 @PropertySource({"classpath:redisson.properties"})
 @ConfigurationProperties(prefix = "redisson.lock.server")
